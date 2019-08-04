@@ -22,15 +22,7 @@ class PadButtonFunctions:
         b.set_light([2, 3], command)
         print("Changing", command['xy'])
 
-    def short_press_2():
-        color = [random(), random()]
-        command = {'transitiontime': 0, 'on': True, 'bri': 100, 'xy': color}
-        b.set_light([2,3], command)
-        command = {'transitiontime': 10 , 'on': True, 'bri': 1, 'xy': color}
-        b.set_light([2, 3], command)
-        print("Changing", command['xy'])
-
-    def short_press_6():
+    def short_press_1():
         color = [random(), random()]
         command = {'transitiontime': 0, 'on': True, 'bri': 100, 'xy': color}
         b.set_light([2], command)
@@ -42,6 +34,15 @@ class PadButtonFunctions:
         b.set_light([2], command)
         print("Changing", command['xy'])
 
+    def short_press_7():
+        color = [random(), random()]
+        command = {'transitiontime': 0, 'on': True, 'bri': 100, 'xy': color}
+        b.set_light([2,3], command)
+        command = {'transitiontime': 10 , 'on': True, 'bri': 1, 'xy': color}
+        b.set_light([2, 3], command)
+        print("Changing", command['xy'])
+
+
     def short_press_68():
         color = [0.2, 0.4]
         command = {'transitiontime': 0, 'on': True, 'bri': 100, 'xy': color}
@@ -52,7 +53,7 @@ class PadButtonFunctions:
 
     def short_press_69():
         color = [0.6, 0.3]
-        command = {'transitiontime': 0, 'on': True, 'bri': 100, 'xy': color}
+        command = {'transitiontime': 1, 'on': True, 'bri': 100, 'xy': color}
         b.set_light([2, 3], command)
         command = {'transitiontime': 3, 'on': True, 'bri': 1, 'xy': color}
         b.set_light([2, 3], command)
